@@ -1,0 +1,9 @@
+PRAGMA foreign_keys=OFF;
+BEGIN TRANSACTION;
+CREATE TABLE IF NOT EXISTS "users_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(128) NOT NULL, "email" varchar(128) NOT NULL);
+INSERT INTO users_user VALUES(1,'Maximilian','testf@f.you');
+INSERT INTO users_user VALUES(2,'Maximilian','testf@f.you');
+INSERT INTO users_user VALUES(3,'Samuel','fu@f.me');
+INSERT INTO users_user VALUES(4,'Sanchez','sanchez@rick.dimension');
+INSERT INTO users_user VALUES(5,'E.Morty','morty@evil.dimension');
+COMMIT;

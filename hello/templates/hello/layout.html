@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+      
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% load static %}  
+        <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="{% static 'css/icon.png' %}">
+    </head>
+    <body>
+        <main>            
+            <header>                
+                <h1>Hello-App</h1>
+            </header>
+            <article> 
+                <div class="item" id="content" name="content">
+                    {% block content %}
+                    {% endblock content %}
+                </div>
+            </article>
+            <nav>
+                <div class="item">
+                    <div class="item navbar">
+                        <a href="{% url 'home' %}" class="navbar-brand">Home</a>
+                        <a href="{% url 'about' %}" class="navbar-item">About</a>   
+                        <a href="{% url 'log' %}" class="navbar-item">Log Message</a>                          
+                        <a href="{% url 'contact' %}" class="navbar-item">Contact</a>                   
+                    </div>
+                </div>                
+                
+                <div class="item">
+                
+                </div>
+                
+                 
+                
+            </nav>
+            <aside>
+                <center><div class="item" id="sidetext" name="sidetext">
+                    
+                </div></center>
+            </aside>
+            <footer>
+                <p style="margin: 10px;">Beatrix Au-Wagner, 5AAWII  &copy; 2023</p>
+            </footer>
+        </main>
+    </body>
+</html>

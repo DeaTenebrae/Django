@@ -20,4 +20,5 @@ urlpatterns = [
     path("", include("hello.urls")), # root-pfad 
     path('admin/', admin.site.urls),
     path('users/', include('users.urls')), # wenn users Verzeichnis aufgerufen wird, soll users.urls geöffnet werden
+    path('hello/', include('hello.urls')), # wenn hello Verzeichnis aufgerufen wird, soll hello.urls geöffnet werden   
 ]

@@ -42,7 +42,7 @@ def log_message(request):
         return render(request, "hello/log_message.html", {"form": form})
 
 def hello(request):
-    return HttpResponse("Hello, Django!")
+    return HttpResponse("Hello, Django/Michelle!")
 
 def it_is_me(request):
     return HttpResponse("Hello, it's me, hi I'm the HttpResponse!")

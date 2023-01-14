@@ -68,6 +68,7 @@ def hello_there(request, name):
 
 # def hello_there(request, name):
 #     print("http://127.0.0.1:8000/hello/VSCode")
+#     print(f"http://127.0.0.1:8000/hello/{name}")
 #     now = datetime.now()
 #     formatted_now = now.strftime("%A, %d %B, %Y at %X")
 #     formatted_now2 = now.strftime("%X now, today a %A, exactly the %d. of %B, in the Year %Y")
